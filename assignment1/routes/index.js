@@ -1,12 +1,12 @@
 var express = require('express')
 var app = express()
-var path = require('path');
+var ejs = require('ejs');
 
 app.get('/', function(req, res) {
-    res.sendFile(path.join(__dirname + '/home.html'));
+    res.sendFile(path.join(__dirname + '/home.ejs'));
 });
 app.get('/home', function(req, res) {
-    res.sendFile(path.join(__dirname + '/home.html'));
+    res.sendFile(path.join(__dirname + '/home.ejs'));
 });
 app.get('/about', function(req, res) {
     res.sendFile(path.join(__dirname + '/about.html'));

@@ -12,6 +12,7 @@ app.use(bodyParser.urlencoded({extended: true}))
 app.use(bodyParser.json());
 
 app.use(expressValidator())
+app.use('/static', express.static(__dirname + '/images'))
 
 var config = require('./config')
 var dbOptions = {
