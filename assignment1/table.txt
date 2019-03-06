@@ -1,0 +1,17 @@
+CREATE DATABASE assignment1;
+
+use assignment1;
+
+CREATE TABLE pages(
+id INT(11) NOT NULL auto_increment,
+pageTitle varchar(20) NOT NULL,
+description varchat(100) NOT NULL,
+imageName varchar(100) NOT NULL,
+PRIMARY KEY (id)
+);
+
+INSERT INTO pages VALUES(1, "home", "my home page", "home.jpg");
+INSERT INTO pages VALUES(2, "blog", "my blog post", "blog.jpg");
+INSERT INTO pages VALUES(3, "services", "services i offer", "services.jpg");
+INSERT INTO pages VALUES(4, "about", "about me", "about.jpg");
+INSERT INTO pages VALUES(5, "contact", "contact me", "contact.jpg");
